@@ -1,18 +1,7 @@
 # Utilizando parameterized commands (comandos con parámetros) de ADO.NET en PostgreSQL 
 
 <p align="justify">
-Para complementar el tema del <a href="http://xomalli.blogspot.mx/2012/08/utilizando-parameterized-commands.html">post  anterior</a>, como un segundo ejemplo mostramos un formulario GTK# que utiliza una función  PL/SQL, en donde además de los parámetros de entrada se establecen dos parámetros de salida, los cuales una vez de ejecutada la función devuelve los valores número de referencia y la fecha actual, que el formulario GTK# muestra en un mensaje.<br />Para preparar el ejemplo, creamos una base de datos llamada Test con una tabla llamada workitems en donde la función creará un nuevo registro.<br />Aquí el código de la tabla:</p><br />
-<!--Code table-->
-<div>
-<IMG src="picture_library/gflow/tbWorkItems.png" border="0">
-</div><br />
-<!--Code-->
-<br /><p>A continuación el código de la función.</p><br />
-<!--Code-->
-<div>
-<IMG src="picture_library/gflow/uspcreaworkitem.png" border="0" width="777">
-</div><br />
-<!--Code-->
+Como un segundo ejemplo mostramos un formulario GTK# que utiliza una función  PL/SQL, en donde además de los parámetros de entrada se establecen dos parámetros de salida, los cuales una vez de ejecutada la función devuelve los valores número de referencia y la fecha actual, que el formulario GTK# muestra en un mensaje.<br />Para preparar el ejemplo, creamos una base de datos llamada Test con una tabla llamada workitems en donde la función creará un nuevo registro.</p>
 <br />
 <p align="justify">
 Esta función utiliza la función <i>createrefnum(id)</i>   utilizada en la <a href="http://xomalli.blogspot.mx/2012/08/utilizando-parameterized-commands.html">primera parte de este tutorial</a>.<br />En esta función los parámetros de salida se especifican con la palabra reservada OUT junto a los parámetros de entrada en los argumentos, inmediatamente después del la declaración del nombre, como se muestra el siguiente fragmento del código.</p>
