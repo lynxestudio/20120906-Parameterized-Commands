@@ -4,7 +4,8 @@
 Como un segundo ejemplo mostramos un formulario GTK# que utiliza una función  PL/SQL, en donde además de los parámetros de entrada se establecen dos parámetros de salida, los cuales una vez de ejecutada la función devuelve los valores número de referencia y la fecha actual, que el formulario GTK# muestra en un mensaje.<br />Para preparar el ejemplo, creamos una base de datos llamada Test con una tabla llamada workitems en donde la función creará un nuevo registro.</p>
 <br />
 <p align="justify">
-Esta función utiliza la función <i>createrefnum(id)</i>   utilizada en la <a href="http://xomalli.blogspot.mx/2012/08/utilizando-parameterized-commands.html">primera parte de este tutorial</a>.<br />En esta función los parámetros de salida se especifican con la palabra reservada OUT junto a los parámetros de entrada en los argumentos, inmediatamente después del la declaración del nombre, como se muestra el siguiente fragmento del código.</p>
+Esta función utiliza la función <i>createrefnum(id)</i>.
+En esta función los parámetros de salida se especifican con la palabra reservada OUT junto a los parámetros de entrada en los argumentos, inmediatamente después del la declaración del nombre, como se muestra el siguiente fragmento del código.</p>
 <pre>
 create or replace function usp_createworkitem(out nref varchar,varchar,varchar,varchar,varchar,out creationDate timestamp) 
 </pre>
