@@ -10,14 +10,8 @@ En esta función los parámetros de salida se especifican con la palabra reserva
 create or replace function usp_createworkitem(out nref varchar,varchar,varchar,varchar,varchar,out creationDate timestamp) 
 </pre>
 <p align="justify">
-En este ejemplo debemos de tener una solución en MonoDevelop con dos tipos de proyectos: uno de tipo library en donde se pondrán las siguientes clases: <br />WorkItem.cs : representa la clase de transporte de datos o POCO.<br />MessageDAC.cs: que representa la clase de acceso a PostgreSQL.<br /><br />El otro es un proyecto tipo GTK# que contiene las clases Main.cs y MainWindow.cs correspondientes a la GUI del formulario y al manejo de eventos.<br />La solución deberá de verse como en la siguiente imagen:</p><br />
-<div>
-<IMG src="picture_library/gflow/sp5.png" border="0">
-</div>
-<p>El diseño del formulario queda como en la siguiente imagen:</p>
-<div>
-<IMG src="picture_library/gflow/sp6.png" border="0">
-</div>
+En este ejemplo debemos de tener una solución en MonoDevelop con dos tipos de proyectos: uno de tipo library en donde se pondrán las siguientes clases: <br />WorkItem.cs : representa la clase de transporte de datos o POCO.<br />MessageDAC.cs: que representa la clase de acceso a PostgreSQL.<br /><br />El otro es un proyecto tipo GTK# que contiene las clases Main.cs y MainWindow.cs correspondientes a la GUI del formulario y al manejo de eventos.
+</p>
 <p align="justify">
 En la clase <i>MessageDAC</i> se encuentra el código en donde ejecutamos la función, para que se ejecute correctamente debemos establecer la propiedad <i>CommandType</i> de la clase <i>NpgsqlCommand</i> con el valor de la enumeración <i>CommandType.StoredProcedure</i>.</p><br />
 <p align="justify">
@@ -53,19 +47,19 @@ wk.Created = Convert.ToDateTime(cmd.Parameters["creationDate"].Value);
 Al compilar y ejecutar el formulario se verá como en la siguiente imagen:
 </p>
 <div>
-<IMG src="picture_library/gflow/sp7.png" border="0">
+<IMG src="images/sp7.png" border="0">
 </div>
 <p align="justify">
 Al introducir los valores y presionar el botón OK se ejecutará el llamado a la función agregando el registro y devolviendo los valores de salida, que se mostrarán con un mensaje como se ve en la siguiente imagen:
 </p>
 <div>
-<IMG src="picture_library/gflow/sp8.png" border="0">
+<IMG src="images/sp8.png" border="0">
 </div><br />
 <p>Si todo se ejecuto correctamente, podemos consultar el registro ejecutando el siguiente comando desde una terminal:</p><br />
 <pre>
 $ psql Test –c “Select * from workitems” - A
 </pre>
 <div>
-<IMG src="picture_library/gflow/sp9.png" border="0">
+<IMG src="images/sp9.png" border="0">
 </div>
 <p>
