@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.4
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GFlow", "GFlow\GFlow.csproj", "{49960E6B-F369-4856-A9A0-E285D1DAD86B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GFlow.Data", "GFlow.Data\GFlow.Data.csproj", "{D52995E8-3231-47B8-919F-F0541A7ED660}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49960E6B-F369-4856-A9A0-E285D1DAD86B}.Debug|x86.ActiveCfg = Debug|x86
+		{49960E6B-F369-4856-A9A0-E285D1DAD86B}.Debug|x86.Build.0 = Debug|x86
+		{49960E6B-F369-4856-A9A0-E285D1DAD86B}.Release|x86.ActiveCfg = Release|x86
+		{49960E6B-F369-4856-A9A0-E285D1DAD86B}.Release|x86.Build.0 = Release|x86
+		{D52995E8-3231-47B8-919F-F0541A7ED660}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D52995E8-3231-47B8-919F-F0541A7ED660}.Debug|x86.Build.0 = Debug|Any CPU
+		{D52995E8-3231-47B8-919F-F0541A7ED660}.Release|x86.ActiveCfg = Release|Any CPU
+		{D52995E8-3231-47B8-919F-F0541A7ED660}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = GFlow\GFlow.csproj
+	EndGlobalSection
+EndGlobal
